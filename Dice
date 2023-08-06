@@ -1,0 +1,22 @@
+import random
+
+for i in range(100):
+    dice1=random.randint(1,6)
+    dice2=random.randint(1,6)
+
+    if dice1+dice2==9:
+        print("Helal lan sana",dice1+dice2,"geldi, sansli cocuk")
+        break
+    else:
+        print("Vay salak,",dice1+dice2,"geldi, salak seni")
+
+
+def inches_to_cm():
+
+    cm=1
+inch=1
+
+cm=inch*2.54
+    
+if cm == 1:
+    print("When it is up by 1 cm, value goes up by")

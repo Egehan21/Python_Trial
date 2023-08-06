@@ -1,0 +1,138 @@
+x=[10,40,30,50,70,90,50,1]
+#listenin ilk ve son elemanı eşitse true dönsün, değil ise false dönsün
+
+first_Element=x[0]
+last_Element=x[-1]
+
+if first_Element==last_Element:
+    print(True)
+else:
+    print(False)
+
+z="Teoman iyi çocuktur, Teoman sevilir, Teoman candir"
+#İçinde kaç adet Teoman var 
+
+count=z.count("Teoman")
+print(count)
+
+rows=6
+
+for i in range(1,rows):
+    for j in range(i):
+        print(i,end=' ')
+
+    print()
+    
+
+income=80000
+tax_1=0
+
+if income<=10000:  
+    tax_1=0
+elif 20000>=income:
+    t=income-10000
+    tax_1=t*0.1
+else:
+    tax_1=10000*0.1
+    tax_1+=0.2*(income-20000)
+
+print(tax_1)
+
+list_1=[21,22,23,24,25,26,27,28]
+list_2=[12,13,14,15,16,17,18]
+list_3=[]
+
+for i in list_1:
+    if i %2==1:
+        list_3.append(i)
+for j in list_2:
+    if j %2==0:
+        list_3.append(j)
+
+print(list_3)
+print(len(list_3))
+        
+def exponent(base, exp):
+    result= base**exp
+    print(base,"raises to the power of",result)
+    
+exponent(6,4)
+
+def table():
+    for i in range(1, 11):
+        for j in range(1, 11):
+            print(i*j,end=" ")
+
+        print("\n")
+table()
+
+#Write a Python program that prints out all colors from color_list_1 that are not present in color_list_2.
+
+color_list_1=set(["Green","Yellow","Purple"])
+color_list_2=set(["Yellow", "Turqoise"])
+color_list_3=list(color_list_1-color_list_2)
+print(color_list_3)
+
+for i in color_list_1:
+    if i not in color_list_2:
+        color_list_3.append(i)
+print(color_list_3)
+
+#{'Black', 'White'}
+
+#filter positive numbers from a list
+
+egehan=[-3,1,6,-8,-12,0,4,18,-41]
+
+for i in egehan:
+    if i >0:
+        print(i)
+
+#Write a Python program to print all even numbers from a given list of numbers in the same order and stop printing any after 237 in the sequence.
+
+numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 958,743, 527 ]
+
+for i in numbers:
+    if i ==237:
+        print(i)
+        break
+    elif i %2==0:
+        print(i)
+
+#Write a program to display only those numbers from a list that satisfy the following conditions:
+#The number must be divisible by five
+#If the number is greater than 150, then skip it and move to the next number
+#if the number is greater than 500, then stop the loop
+
+question_numbers=[28,40,335,67,80,990,499,42,31,10]
+
+for i in question_numbers:
+    if i %5==0:
+        if i >150:
+            continue
+        if i > 500:
+            break
+        print([i])
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+

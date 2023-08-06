@@ -1,0 +1,101 @@
+#Write a Python program that will accept the base and height of a triangle and compute its area.
+
+def triangle():
+    base=int(input("Lütfen taban uzunlugunu giriniz:"))
+    height=int(input("Lütfen yükseligi giriniz:"))
+    area=base*height/2
+    print(area)
+
+triangle()
+
+#Swap two variables
+
+a=int(input("enter the first value:"))
+b=int(input("enter the second value:"))
+temp=a
+a=b
+b=temp
+
+print("a is", a, "b is",b)
+
+#filter positive numbers from a list
+
+egehan=[-3,1,6,-8,-12,0,4,18,-41]
+
+for i in egehan:
+    if i >0:
+        print(i)
+
+#Bir yılın artık yıl olup olmadığını belirlemek için aşağıdaki adımları izleyin:
+#Yıl 4 ile eşit bölünebilir ise, adım 2'e gidin. Aksi durumda, 5. adıma gidin.
+#Yıl 100 ile eşit bölünebilir ise, adım 3'e gidin. Aksi durumda, 4. adıma gidin.
+#Yıl 400 ile eşit bölünebilir ise, adım 4'e gidin. Aksi durumda, 5. adıma gidin.
+#Yıl artık yıldır (366 gün vardır).
+#Yıl artık yıl değildir (365 gün vardır).
+
+#Leap year
+
+year=int(input("Mevcut yili giriniz:"))
+
+if year %4==0:
+    if year %100==0:
+        if year %400==0:
+            print("Leap year icindesiniz")
+        else:
+            print("Leap Year icinde degilsiniz")
+    else:
+        print("Leap Year icindesiniz")
+else:
+    print("Leap year icinde degilsiniz")
+
+#Average of 10 numbers
+
+sum=0
+count=0
+
+while count < 10:
+    o=int(input("Deger giriniz:"))
+    count+=1
+    sum+=o
+    average=sum/count
+    
+print(average)
+
+#Sum different integers
+
+sum=0
+while True:
+    num=int(input("Deger giriniz:"))
+    if num==0:
+        break
+    sum+=num
+print(sum)
+
+#Sum of n numbers using a list
+
+sum_of_numbers=[]
+x=int(input("Listenin uzunlugunu giriniz:"))
+
+for i in range(x):
+    y=int(input("Listenin degerlerini giriniz:"))
+    sum_of_numbers.append(y)
+    
+print(sum(sum_of_numbers))
+print(sum_of_numbers)
+
+#Exercise 16: Calculate the cube of all numbers from 1 to a given number
+#Write a program to rint the cube of all numbers from 1 to a given number
+#Given:
+#input_number = 6
+#Expected output:
+#Current Number is : 1  and the cube is 1
+#Current Number is : 2  and the cube is 8
+#Current Number is : 3  and the cube is 27
+#urrent Number is : 4  and the cube is 64
+#Current Number is : 5  and the cube is 125
+#Current Number is : 6  and the cube is 216
+
+number_cube=int(input("Deger giriniz lutfen amk:"))
+
+for i in range(1, number_cube+1):
+    print("Current number is:",i,"and the cube is:", i**3)

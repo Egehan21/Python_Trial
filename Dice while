@@ -1,0 +1,14 @@
+
+
+
+
+ayzer={"teo": ['anan', 'para'], "ege": 'eslab'}
+
+for i in ayzer.keys():
+    print(ayzer.get(i))
+
+
+
+
+
+        
